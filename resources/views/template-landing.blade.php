@@ -34,7 +34,8 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav gap-4">
                     <li class="nav-item">
-                        <a class="nav-link nav-active fw-bold" aria-current="page" href="{{route('landing')}}">Home</a>
+                        <a class="nav-link nav-active fw-bold" aria-current="page"
+                            href="{{ route('landing') }}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink"
@@ -42,12 +43,12 @@
                             Akademik
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{route('prestasi')}}">Prestasi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('prestasi') }}">Prestasi</a></li>
                             <li><a class="dropdown-item" href="#">Link E-Raport</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="{{route('kompetensi')}}">Kompetensi Keahlian</a>
+                        <a class="nav-link fw-bold" href="{{ route('kompetensi') }}">Kompetensi Keahlian</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink"
@@ -55,12 +56,12 @@
                             Staff
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{route('struktur')}}">Struktur Organisasi</a></li>
-                            <li><a class="dropdown-item" href="{{route('staff')}}">Guru & Tata Usaha</a></li>                        
-                            </ul>
+                            <li><a class="dropdown-item" href="{{ route('struktur') }}">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="{{ route('staff') }}">Guru & Tata Usaha</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="{{route('galeri')}}">Galeri Kegiatan</a>
+                        <a class="nav-link fw-bold" href="{{ route('galeri') }}">Galeri Kegiatan</a>
                     </li>
                 </ul>
             </div>
@@ -75,7 +76,7 @@
                 <div class="col-lg-12 p-4" style="background-color:black">
                     <div>
                         <div class=" ">
-                            <img src="assets/img/SMAN MODEL LOGO.png" alt="#">
+                            <img src="{{ asset('assets/img/SMAN MODEL LOGO.png') }}" alt="#">
                             <P class="text-light">SMA NEGERI MODEL GORONTALO
                                 <br>Jl. Muchlis Rahim, Desa Panggulo Barat – Botupingge Kab Bone Bolango – Provinsi
                                 Gorontalo 96554 Indonesia
@@ -83,7 +84,8 @@
                         </div>
                         <div class=" ">
                             <P class="text-light">follow Us</P>
-                            <img src="assets/img/facebook-instagram-twitter-icons-png-12 1.png" alt="#">
+                            <img src="{{ asset('assets/img/facebook-instagram-twitter-icons-png-12 1.png') }}"
+                                alt="#">
                         </div>
                     </div>
                 </div>

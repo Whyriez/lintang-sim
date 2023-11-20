@@ -129,11 +129,14 @@ class KompetensiController extends Controller
     public function destroy($id)
     {
         $data = Kompetensi::find($id);
-        $name = $data->foto_kompetensi;
-        if ($name != null || $name != '') {
-            Storage::disk('public')->delete($name);
+        $dataDetail = DetailKompetensi::where('id_foto', $id)->get();
+        foreach ($dataDetail as $detail) {
+            $name = $detail->nama_foto_kompetensi;
+            if ($name != null && $name != '') {
+                Storage::disk('public')->delete($name);
+            }
         }
-
+        DetailKompetensi::where('id_foto', $id)->delete();
         $data->delete();
 
         return redirect()->route('dashboard.kompetensi');
